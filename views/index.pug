@@ -1,0 +1,136 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Amharic Bible API
+    style.
+      * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #fff;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px 20px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      }
+
+      .card h2 {
+        margin-top: 0;
+        color: #ffd369;
+      }
+
+      .endpoint {
+        background: #111;
+        padding: 12px 15px;
+        border-radius: 10px;
+        margin: 10px 0;
+        font-family: monospace;
+        overflow-x: auto;
+      }
+
+      .tag {
+        display: inline-block;
+        background: #ffd369;
+        color: #000;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 60px;
+        opacity: 0.7;
+        font-size: 0.9rem;
+      }
+
+      a {
+        color: #ffd369;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+  body
+    .container
+      header
+        h1 📖 Amharic Bible API
+        p A simple and powerful REST API for the Amharic Holy Bible
+
+      .card
+        span.tag Overview
+        h2 What is this?
+        p.
+          This API provides structured access to the Amharic Bible.
+          Each book is stored as JSON and served through clean REST endpoints.
+          No database. No complexity. Just scripture.
+
+      .card
+        span.tag Usage
+        h2 Available Endpoints
+
+        p List all books
+        .endpoint GET /api/am/books
+
+        p Get all chapters of a book
+        .endpoint GET /api/am/books/ኦሪት ዘፍጥረት/chapters
+
+        p Get a specific chapter
+        .endpoint GET /api/am/books/ኦሪት ዘፍጥረት/chapters/1
+
+        p Get a single verse
+        .endpoint GET /api/am/books/ኦሪት ዘፍጥረት/chapters/1/1
+
+      .card
+        span.tag Tips
+        h2 Notes
+        ul
+          li Amharic characters in URLs are fully supported
+          li Browsers auto-encode the URLs
+          li Add new books by dropping JSON files into the data folder
+
+      .card
+        span.tag Open Source
+        h2 Build With It
+        p.
+          You are free to use this API for apps, websites, research, or learning.
+          Contributions and improvements are welcome.
+
+      footer
+        p
+          | Built with ❤️ for Amharic readers and developers ·
+          a(href="https://github.com/misikirAyu/amharic-bible-api", target="_blank") GitHub
