@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amharic Bible API</title>
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #111111;
+      --text-secondary: #666666;
+      --border-color: #eaeaea;
+      --accent-color: #000000;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin: 0 0 1rem 0;
+      letter-spacing: -0.03em;
+    }
+    p.lead {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      margin: 0 0 2.5rem 0;
+    }
+    .cta {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.2s ease;
+    }
+    .cta:hover {
+      opacity: 0.8;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 40px;
+      margin-top: 80px;
+      text-align: left;
+    }
+    .feature h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 0.5rem 0;
+    }
+    .feature p {
+      color: var(--text-secondary);
+      margin: 0;
+      font-size: 0.95rem;
+    }
+    footer {
+      margin-top: 100px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    footer a {
+      color: var(--text-color);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border-color);
+    }
+    footer a:hover {
+      border-bottom-color: var(--text-color);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📖 Open Amharic Bible API</h1>
+    <p class="lead">Clean. Fast. Open REST API for the Amharic Holy Bible.</p>
+    
+    <a href="/docs" class="cta">View Documentation →</a>
+
+    <div class="features">
+      <div class="feature">
+        <h3>⚡ Fast & Simple</h3>
+        <p>No database. Pure JSON. Lightweight and reliable.</p>
+      </div>
+      <div class="feature">
+        <h3>🌍 Unicode Ready</h3>
+        <p>Fully supports Amharic book names and search queries.</p>
+      </div>
+      <div class="feature">
+        <h3>🔍 Powerful Search</h3>
+        <p>Search verses across the Bible or inside specific books.</p>
+      </div>
+      <div class="feature">
+        <h3>🧩 Open Source</h3>
+        <p>Free to use. Easy to extend. Community-driven.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Live API · <a rel="noopener" href="https://api-amharic-bible.bibleethiopia.org/" target="_blank">https://api-amharic-bible.bibleethiopia.org/</a> · <a rel="noopener" href="https://github.com/misikirAyu/amharic-bible-api" target="_blank">GitHub</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
